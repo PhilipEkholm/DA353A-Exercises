@@ -2,8 +2,6 @@ package laboration7;
 
 import java.util.Random;
 
-import arrays.ArraySupporter;
-
 public class TestHeapify {
 	public static void main(String[] args) {
 		TestHeapify th = new TestHeapify();

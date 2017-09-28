@@ -1,6 +1,7 @@
 package laboration1;
-import gu2.PaintWindow_GU2;
 import java.awt.*;
+
+import paintwindow.PaintWindow;
 
 public class Snowflake {
     public Point getTip(int x, int y, int len, int pos) {
@@ -16,7 +17,7 @@ public class Snowflake {
         return res;
     }
     
-    public void snowflake( PaintWindow_GU2 frame, int x, int y, int len, Color color ) {
+    public void snowflake( PaintWindow frame, int x, int y, int len, Color color ) {
         frame.line(x-len, y, x+len, y, color, 1);
         frame.line(x + (int)(Math.cos(Math.PI/3)*len), y - (int)(Math.sin(Math.PI/3)*len), x - (int)(Math.cos(Math.PI/3)*len), y + (int)(Math.sin(Math.PI/3)*len), color, 1);
         frame.line(x - (int)(Math.cos(Math.PI/3)*len), y - (int)(Math.sin(Math.PI/3)*len), x + (int)(Math.cos(Math.PI/3)*len), y + (int)(Math.sin(Math.PI/3)*len), color, 1);
@@ -27,7 +28,7 @@ public class Snowflake {
     }
         
     // Ersätt halvkoden med kod
-    public void newSnowflake( PaintWindow_GU2 frame, int x, int y, int len, Color color ) {
+    public void newSnowflake( PaintWindow frame, int x, int y, int len, Color color ) {
         // Om flingans bredd (len) är minst 10
     	Color randColor = this.randomColor();
     	if(len >= 10){
@@ -56,7 +57,11 @@ public class Snowflake {
 //     nyFlinga( frame, p.x, p.y, len/3, randomColor );
     
     public static void main(String[] args) {
-    	PaintWindow_GU2 frame = new PaintWindow_GU2(600,600,"Snowflakes",Color.BLACK);
+    	PaintWindow frame = new PaintWindow();
+    	frame.setSize(600, 600);
+    	frame.setTitle("Snowflakes");
+    	frame.setBackground(Color.BLACK);
+    	
         Snowflake graf = new Snowflake();
         graf.newSnowflake(frame, 300, 300, 200, Color.WHITE);
     }    

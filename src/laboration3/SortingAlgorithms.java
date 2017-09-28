@@ -1,5 +1,5 @@
 package laboration3;
-import arrays.ArraySupporter;
+import java.util.Random;
 
 /*
  *	Test på skoldatorer, double-array med 10k celler:
@@ -12,10 +12,38 @@ import arrays.ArraySupporter;
  */
 
 public class SortingAlgorithms {
+	
+	private static double[] generateRandomArray(int length, double min, double max) {
+		if (min > max)
+			return null;
+		
+		double[] array = new double[length];
+		Random rand = new Random();
+		
+		for (int i = 0; i < array.length; ++i) {
+			array[i] = (min + (rand.nextFloat() * max));
+		}
+		
+		return array;
+	}
+	
+	private static double[] copy(double[] oldArray) {
+		if (oldArray == null)
+			return null;
+		
+		double[] array = new double[oldArray.length];
+		
+		for (int i = 0; i < oldArray.length; ++i) {
+			array[i] = oldArray[i];
+		}
+		
+		return array;
+	}
+	
 	public static void main(String[] args) {
-		double[] array1 = ArraySupporter.generateRandomArray(10000, 5.0, 50),
-				array2 = ArraySupporter.copy(array1),
-				array3 = ArraySupporter.copy(array1);
+		double[] array1 = SortingAlgorithms.generateRandomArray(10000, 5.0, 50),
+				array2 = SortingAlgorithms.copy(array1),
+				array3 = SortingAlgorithms.copy(array1);
 		
 		//Test1
 //		long start, stop;

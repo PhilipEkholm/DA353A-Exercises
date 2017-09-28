@@ -1,8 +1,6 @@
 package laboration4;
 import java.util.Arrays;
 
-import arrays.ArraySupporter;
-
 public class DynamicString implements Comparable<DynamicString>{
 	private char[] chars;
 	private int length;
