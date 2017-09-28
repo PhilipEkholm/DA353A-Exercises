@@ -1,0 +1,10 @@
+Svar uppg 9:
+
+A: Chars arrayen fyller den funktion att lagra alla tecken i vår dynamicstring för att manipuleras/skrivas ut senare
+B: Length håller koll på antalet tecken i vår chars array
+C: length kommer att ha värdet 10, och alla chars kommer ha värdet null då de inte är bestämda ännu.
+D: length kommer ha värdet 7, och kommer samtliga chars kommer få varsin bokstav av strängen: "S", "t", "u", "d", "e", "n", "t"
+E: samma som ds2, då vi kommer få en kopia tillbaka från det tidigare objektet.
+F: Då en bokstav sätts in i ett godtyckligt område av strängen kommer man behöva flytta fram alla bokstäver efter denna, detta gör man i for-loopen. Length inkrementeras då en bokstav läggs till
+G: Vi anropar add fast med ett extra argument av length, vilket gör vi sätter oss vid slutet av strängen. Detta är ett vanligt trick att utföra.
+H: När du tar bort en bokstav i en godtycklig position måste alla bokstäver efter att positioneras om, detta görs i for-loopen.

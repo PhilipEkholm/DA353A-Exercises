@@ -1,0 +1,58 @@
+Svar uppgifter:
+
+3: 108642
+4: 10 + 20 = 30
+11 + 19 = 30
+12 + 18 = 30
+.
+.
+.
+tills 15 + 15 = 30
+
+10a: Man summerar varannat element i arrayen. Utskriften blir 23 - 20 + 8 = 11
+10b: Var udda element summeras och skrivs ut: Utskriften blir -45 + 10 = -35
+11: Metoden kollar antalet negativa tal lagrade i fältet. Utskriften blir: 2
+
+14: 24, metoden summerar ihop en funktion av n
+
+17: Dubbelrekursiv funktion är jobbig...
+a=10
+a=6
+a=2
+a=3
+a=0
+a=7
+a=3
+a=0
+a=7
+a=3
+a=0
+a=4
+a=0
+a=1
+
+18: 9 6 -2 7 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

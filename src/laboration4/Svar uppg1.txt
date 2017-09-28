@@ -1,0 +1,10 @@
+A: persons.toString() skriver ut samtliga toStrings hos samtliga objekt som har lagrats i denna samling. 
+B: Hämtar person som ligger på index 2. 600930-3456,Roland,Ek
+C: Lägger till en ny person på slutet av listan.
+D: Lägger till en ny person på indexposition 4. Personen som eventuellt låg på denna position kommer flyttas 
+upp i index (ökande index), och fortsätter på detta vis tills den sista personen har ett ledigt index.
+E: Returnerar storleken av listan i form av antal index som används.
+F: returnerar index av pers2 vilken ligger på index 4
+G: returnerar en bool som är true om personen i fråga kunde hittas i listan, annars false.
+H: tar bort personen som låg på index 1
+I: tar bort samtliga personer i listan
