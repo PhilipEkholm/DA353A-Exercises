@@ -1,3 +1,5 @@
-# DS-laborationer
+# DA353A-Exercises
 
-Laborationer utförda om datastrukturer.
+Exercises I did during the datastructure course, first year computer engineering.
+
+Written by me!
